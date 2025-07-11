@@ -1,15 +1,16 @@
 window.addEventListener("load", function () {
-  // Only show alert on index.html
+  // Show alert only on the home page
+  const path = window.location.pathname.toLowerCase();
   const isHomePage =
-    window.location.pathname.endsWith("index.html") ||
-    window.location.pathname === "/" ||
-    window.location.pathname.includes("gretawebsite/");
+    path === "/" ||
+    path.endsWith("/index.html") ||
+    path.includes("/gretawebsite/") && (path.endsWith("/") || path.endsWith("index.html"));
 
   if (isHomePage) {
-    alert("Even the smallest person can change the course of the future. – Galadriel");
+    alert("Welcome to Middle-earth!");
   }
 
-  // Sample mobile nav logic (optional, keep only if you're using a responsive menu)
+  // Optional mobile nav toggle (keep if you're using it)
   const getNavi = document.getElementById("navigation");
   if (getNavi) {
     const mobile = document.createElement("span");
