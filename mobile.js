@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
     window.location.pathname.includes("gretawebsite/");
 
   if (isHomePage) {
-    alert("Welcome to Middle-earth!");
+    alert("Even the smallest person can change the course of the future. – Galadriel");
   }
 
   // Sample mobile nav logic (optional, keep only if you're using a responsive menu)
