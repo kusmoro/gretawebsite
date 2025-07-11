@@ -2,8 +2,6 @@
 window.addEventListener("load", function () {
   const isHomePage =
     window.location.pathname.endsWith("index.html") ||
-    window.location.pathname === "/" ||
-    window.location.pathname === "/index.html";
 
   if (isHomePage) {
     alert(
